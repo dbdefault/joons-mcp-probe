@@ -115,7 +115,7 @@ This is a 0.1.0 Preview, not a security audit or proof of server safety. It insp
 
 ## More information
 
-[API](docs/API.md) | [Architecture](docs/ARCHITECTURE.md) | [Contributing](CONTRIBUTING.md) | [Security](SECURITY.md) | [Changelog](CHANGELOG.md) | [한국어](README.ko.md)
+[API](docs/API.md) | [Architecture](docs/ARCHITECTURE.md) | [Real-world validation](docs/REAL_WORLD_VALIDATION.md) | [Contributing](CONTRIBUTING.md) | [Security](SECURITY.md) | [Changelog](CHANGELOG.md) | [한국어](README.ko.md)
 
 Windows batch targets (.cmd/.bat, including PATH/PATHEXT shims) are usage errors (3). Choose shell interpretation explicitly with: stdio -- cmd.exe /d /s /c <file>. Credential masks cover common URL/base64/base64url and Authorization echoes; Markdown and terminal JSON neutralize bidi and control characters. See docs/API.md for the exact boundary.
 

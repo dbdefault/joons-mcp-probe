@@ -115,7 +115,7 @@ Target: stdio node examples/stdio-server.js
 
 ## 추가 정보
 
-[API](docs/API.md) · [아키텍처](docs/ARCHITECTURE.md) · [기여 안내](CONTRIBUTING.md) · [보안](SECURITY.md) · [변경 내역](CHANGELOG.md) · [한국어](README.ko.md)
+[API](docs/API.md) · [아키텍처](docs/ARCHITECTURE.md) · [실전 검증 사례(영문)](docs/REAL_WORLD_VALIDATION.md) · [기여 안내](CONTRIBUTING.md) · [보안](SECURITY.md) · [변경 내역](CHANGELOG.md) · [한국어](README.ko.md)
 
 Windows 배치 파일(.cmd/.bat, PATH/PATHEXT 검색 포함)은 사용 오류(3)로 거부합니다. 셸 해석이 필요하면 stdio -- cmd.exe /d /s /c <file>을 명시적으로 선택하세요. 비밀값은 일반적인 URL/base64/base64url 인코딩과 Authorization 에코까지 마스킹하며, Markdown과 터미널 JSON에서는 bidi 및 제어문자를 비활성화합니다. 정확한 범위는 docs/API.md에 설명되어 있습니다.
 
