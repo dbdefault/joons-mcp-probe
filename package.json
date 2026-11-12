@@ -1,0 +1,20 @@
+{
+  "name": "joons-mcp-probe",
+  "version": "0.1.0",
+  "description": "A lightweight MCP server inspection and validation toolkit for developers.",
+  "type": "module",
+  "license": "Apache-2.0",
+  "bin": { "joons-mcp-probe": "bin/joons-mcp-probe.js" },
+  "main": "src/index.js",
+  "exports": { ".": "./src/index.js" },
+  "files": ["bin", "src", "docs", "examples", "scripts/process-tree.ps1", "README.md", "README.ko.md", "LICENSE", "CHANGELOG.md", "CONTRIBUTING.md", "SECURITY.md"],
+  "engines": { "node": ">=20" },
+  "scripts": { "test": "node scripts/test.js" },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "~1.32.2",
+    "zod": "^4.6.7",
+    "ajv": "^8.20.0"
+  },
+  "repository": { "type": "git", "url": "git+https://github.com/dbdefault/joons-mcp-probe.git" },
+  "keywords": ["mcp", "model-context-protocol", "inspector", "validation", "diagnostics", "ai-agents", "joons"]
+}

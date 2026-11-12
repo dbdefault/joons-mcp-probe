@@ -1,0 +1,20 @@
+name: MCP inspection
+on: [push, pull_request]
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm install
+      - name: Inspect example server
+        run: node bin/joons-mcp-probe.js stdio --json-out report.json -- node examples/stdio-server.js
+      - name: Upload report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mcp-probe-report
+          path: report.json
+          if-no-files-found: warn
